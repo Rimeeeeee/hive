@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y git
 # Allow the user to specify a branch or commit to checkout
 RUN git init execution-spec-tests && \
     cd execution-spec-tests && \
-    git remote add origin https://github.com/ethereum/execution-spec-tests.git && \
+    git remote add origin https://github.com/Soubhik-10/execution-spec-tests.git && \
     git fetch --depth 1 origin $GIT_REF && \
     git checkout FETCH_HEAD;
 
